@@ -13,7 +13,7 @@ import (
 
 func main() {
 	if len(os.Args) < 3 {
-		log.Fatalf("Usage: %s <app_config> <label_config>\n", os.Args[0])
+		log.Fatalf("Usage: %s <app_config> <app_rule>\n", os.Args[0])
 	}
 
 	cfg, err := config.ReadConfig(os.Args[1])

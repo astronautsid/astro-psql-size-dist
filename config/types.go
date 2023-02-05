@@ -9,12 +9,12 @@ type (
 		DbName   string `yaml:"dbname"`
 	}
 
-	LabelToTableConnection struct {
+	LabelToTableRelation struct {
 		Name   string   `json:"name"`
 		Tables []string `json:"tables"`
 	}
 
 	Rule struct {
-		Labels []LabelToTableConnection `json:"labels"`
+		Labels []LabelToTableRelation `json:"labels"`
 	}
 )
