@@ -1,0 +1,231 @@
+{
+    "labels": [
+        {
+            "name": "browse",
+            "tables": [
+                "banner_hubs",
+                "banner_targeted_user",
+                "banners",
+                "catalog_images",
+                "catalogs",
+                "categories",
+                "category_hubs",
+                "category_targeted_user",
+                "dynamic_channel",
+                "dynamic_channel_attribute",
+                "dynamic_channel_field",
+                "dynamic_channel_field_type",
+                "dynamic_channel_filter_list",
+                "dynamic_channel_filter_type",
+                "dynamic_channel_location",
+                "dynamic_channel_product",
+                "dynamic_channel_type",
+                "order_widget_images",
+                "order_widgets"
+                "tickers",
+                "targeting_type_details",
+                "ticker_configs",
+                "ticker_hubs",
+                "ticker_images",
+                "ticker_pages"
+            ]
+        },
+        {
+            "name": "erp",
+            "tables": [
+                "currencies",
+                "erp_customer_deposits",
+                "erp_integration_logs",
+                "erp_invoice_items",
+                "erp_invoices",
+                "erp_refunds",
+                "vendors"
+            ]
+        },
+        {
+            "name": "fulfillment",
+            "tables": [
+                "cloud_kitchen_schedules",
+                "location_settings",
+                "locations_geofencing",
+                "order_review_comments",
+                "order_reviews",
+                "sku_manual_input_auth_histories",
+                "sku_manual_input_notes",
+                "extreme_sla_trackers",
+                "fulfillment_orders_geofencing"
+            ]
+        },
+        {
+            "name": "ims",
+            "tables": [
+                "bill_of_material_components",
+                "bill_of_materials",
+                "brand_companies",
+                "brands",
+                "campaigns",
+                "draft_campaign_inventories",
+                "fulfillment_order_kits",
+                "inventories",
+                "inventory_discount_usages",
+                "inventory_discounts",
+                "inventory_log_stocks",
+                "inventory_status_notes",
+                "inventory_status_notes_mapping",
+                "inventory_stock_history",
+                "order_kits",
+                "package_id",
+                "product_attributes",
+                "product_categories",
+                "product_detail_images",
+                "product_details",
+                "product_package_structure_dimensions",
+                "product_package_structures",
+                "product_types",
+                "products",
+                "rack_storages",
+                "racks",
+                "unit_of_measurements"
+            ]
+        },
+        {
+            "name": "location",
+            "tables": [
+                "blacklist_address",
+                "distance_matrix",
+                "location_detail",
+                "locations",
+                "service_level_locations",
+                "service_levels",
+                "whitelist_address"
+            ]
+        },
+        {
+            "name": "logistic",
+            "tables": [
+                "external_drivers",
+                "external_drivers_attribute"
+            ]
+        },
+        {
+            "name": "oms",
+            "tables": [
+                "discounted_shipping_usages",
+                "drivers_history",
+                "drivers_status_update_logs",
+                "fulfillment_order_line_items",
+                "fulfillment_orders",
+                "order_line_item_details",
+                "order_line_items",
+                "order_pools",
+                "order_reference_notes",
+                "order_settings",
+                "order_shipment",
+                "order_status_images",
+                "orders"
+            ]
+        },
+        {
+            "name": "payment",
+            "tables": [
+                "bank_account_lists",
+                "customer_bank_accounts",
+                "customer_cc",
+                "customer_ovo_payment_histories",
+                "customer_ovo_payments",
+                "drivers_tipping_transactions",
+                "midtrans_transaction_param",
+                "payment_channels",
+                "payments",
+                "refund_line_items",
+                "refund_proofs",
+                "refunds",
+                "xendit_transaction_param"
+            ]
+        },
+        {
+            "name": "promo",
+            "tables": [
+                "customer_point_transactions",
+                "customer_referral",
+                "customer_vouchers",
+                "referral_groups",
+                "referral_settings",
+                "referral_voucher_settings",
+                "tiering",
+                "voucher_applied",
+                "voucher_contents",
+                "voucher_costs",
+                "voucher_rules",
+                "vouchers",
+                "vouchers_unique"
+            ]
+        },
+        {
+            "name": "search",
+            "tables": [
+                "popular_categories",
+                "popular_keywords",
+                "product_category_position_hubs",
+                "product_category_positions",
+                "product_search",
+                "search_inventory_keyword_atc",
+                "search_keyword_category",
+                "search_product_keyword_atc",
+                "search_product_tags",
+            ]
+        },
+        {
+            "name": "wms",
+            "tables": [
+                "customer_suggest",
+                "fulfillment_purchase_order_line_items",
+                "fulfillment_purchase_order_package_items",
+                "fulfillment_purchase_orders",
+                "fulfillment_supply_order",
+                "fulfillment_supply_order_items_old",
+                "fulfillment_supply_order_old_user_logs",
+                "fulfillment_supply_order_user_logs",
+                "fulfillment_supply_orders_old",
+                "kolis",
+                "purchase_order_line_items",
+                "purchase_order_package_items",
+                "purchase_order_parties",
+                "purchase_orders",
+                "parties",
+                "soauto_param",
+                "soauto_report",
+                "soauto_detail_report",
+                "soauto_schedule",
+                "soauto_session",
+                "soauto_upload",
+                "supply_order_item_details",
+                "supply_order_item_details_old",
+                "supply_order_items",
+                "supply_order_items_old",
+                "supply_order_remarks",
+                "supply_orders",
+                "supply_orders_old",
+                "supply_orders_old_track_scanning"
+            ]
+        },
+        {
+            "name": "hris",
+            "tables": [
+                "driver_vehicles"
+            ]
+        },
+        {
+            "name": "image",
+            "tables": [
+                "images"
+            ]
+        },
+        {
+            "name": "notifications",
+            "tables": [
+                "notifications"
+            ]
+        }
+    ]
+}
