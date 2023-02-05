@@ -8,4 +8,13 @@ type (
 		Port     uint16 `yaml:"port"`
 		DbName   string `yaml:"dbname"`
 	}
+
+	LabelToTableConnection struct {
+		Name   string   `json:"name"`
+		Tables []string `json:"tables"`
+	}
+
+	Rule struct {
+		Labels []LabelToTableConnection `json:"labels"`
+	}
 )

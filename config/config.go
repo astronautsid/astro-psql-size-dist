@@ -1,6 +1,8 @@
 package config
 
 import (
+	"encoding/json"
+	"io/ioutil"
 	"os"
 
 	"gopkg.in/yaml.v3"
@@ -24,4 +26,28 @@ func ReadConfig(configFile string) (Config, error) {
 	}
 
 	return config, nil
+}
+
+func ReadRule(ruleFile string) (Rule, error) {
+	var rule Rule
+
+	file, err := os.Open(ruleFile)
+	if err != nil {
+		return rule, err
+	}
+
+	defer file.Close()
+
+	if file != nil {
+		byteValue, err := ioutil.ReadAll(file)
+		if err != nil {
+			return rule, err
+		}
+		err = json.Unmarshal(byteValue, &rule)
+		if err != nil {
+			return rule, err
+		}
+	}
+
+	return rule, nil
 }

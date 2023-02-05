@@ -21,7 +21,7 @@
                 "dynamic_channel_product",
                 "dynamic_channel_type",
                 "order_widget_images",
-                "order_widgets"
+                "order_widgets",
                 "tickers",
                 "targeting_type_details",
                 "ticker_configs",
@@ -172,7 +172,7 @@
                 "search_inventory_keyword_atc",
                 "search_keyword_category",
                 "search_product_keyword_atc",
-                "search_product_tags",
+                "search_product_tags"
             ]
         },
         {
@@ -222,7 +222,7 @@
             ]
         },
         {
-            "name": "notifications",
+            "name": "notification",
             "tables": [
                 "notifications"
             ]
