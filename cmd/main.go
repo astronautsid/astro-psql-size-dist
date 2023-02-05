@@ -28,7 +28,7 @@ func main() {
 		cfg.Port,
 		cfg.DbName,
 	)
-	fmt.Println("Connecting with connection string: ", connectionString)
+	fmt.Println("Connecting with: ", connectionString)
 
 	db, err := sql.Open("postgres", connectionString)
 	if err != nil {
@@ -50,21 +50,17 @@ func main() {
 		tableInfo = append(tableInfo, it)
 	}
 
-	fmt.Printf("table count: %d\n", len(tableInfo))
-	for _, it := range tableInfo {
-		fmt.Printf("table info: (name: %s, size: %d)\n", it.Name, it.Size)
-	}
+	fmt.Printf("Table count: %d\n", len(tableInfo))
 
 	rule, err := config.ReadRule(os.Args[2])
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("size: %d\n", len(rule.Labels))
+	fmt.Printf("Rule count: %d\n", len(rule.Labels))
 
 	labelInfo := []info.Label{}
 	for _, r := range rule.Labels {
-		fmt.Printf("rule label info: (name: %s, length: %d)\n", r.Name, len(r.Tables))
 		groupedTableInfo := []info.Table{}
 		for _, tableName := range r.Tables {
 			size, err := info.GetSizeOfTableName(tableInfo, tableName)
@@ -80,6 +76,6 @@ func main() {
 	labelInfo = append(labelInfo, info.Label{Name: "unknown", Tables: tableInfo})
 
 	for _, li := range labelInfo {
-		fmt.Printf("label info: (name: %s, table count: %d, total size: %d)\n", li.Name, len(li.Tables), li.CountSize())
+		fmt.Printf("Label info: (name: %s, table count: %d, total size: %d)\n", li.Name, len(li.Tables), li.CountSize())
 	}
 }
