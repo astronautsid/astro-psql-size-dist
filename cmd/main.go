@@ -12,8 +12,8 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 3 {
-		log.Fatalf("Usage: %s <app_config> <app_rule>\n", os.Args[0])
+	if len(os.Args) < 4 {
+		log.Fatalf("Usage: %s <app_config> <app_rule> <result_file>\n", os.Args[0])
 	}
 
 	cfg, err := config.ReadConfig(os.Args[1])
@@ -78,4 +78,6 @@ func main() {
 	for _, li := range labelInfo {
 		fmt.Printf("Label info: (name: %s, table count: %d, total size: %d)\n", li.Name, len(li.Tables), li.CountSize())
 	}
+
+	info.WriteToFile(os.Args[3], labelInfo)
 }

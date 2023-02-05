@@ -1,6 +1,29 @@
 {
     "labels": [
         {
+        	"name": "account",
+			"tables": [
+				"customer_devices",
+				"customers",
+				"customers_address",
+				"customers_address_histories",
+				"customers_address_notes",
+				"customers_authority",
+				"device_notifications",
+				"drivers",
+				"drivers_authority",
+				"feature_flag",
+				"hub_features",
+				"locations_instruction",
+				"login_stories",
+				"roles",
+				"users",
+				"users_authority",
+				"users_locations",
+				"users_roles"
+			]
+		},
+		{
             "name": "browse",
             "tables": [
                 "banner_hubs",
@@ -67,18 +90,21 @@
                 "draft_campaign_inventories",
                 "fulfillment_order_kits",
                 "inventories",
+                "inventories_tmp_ns",
                 "inventory_discount_usages",
                 "inventory_discounts",
                 "inventory_log_stocks",
                 "inventory_status_notes",
                 "inventory_status_notes_mapping",
                 "inventory_stock_history",
+                "inventory_stock_history_tmp_ns",
                 "order_kits",
                 "package_id",
                 "product_attributes",
                 "product_categories",
                 "product_detail_images",
                 "product_details",
+                "product_details_tmp_ns",
                 "product_package_structure_dimensions",
                 "product_package_structures",
                 "product_types",
@@ -115,14 +141,18 @@
                 "drivers_status_update_logs",
                 "fulfillment_order_line_items",
                 "fulfillment_orders",
+                "fulfillment_orders_tmp_ns",
                 "order_line_item_details",
+                "order_line_item_details_tmp_ns",
                 "order_line_items",
+                "order_line_items_tmp_ns",
                 "order_pools",
                 "order_reference_notes",
                 "order_settings",
                 "order_shipment",
                 "order_status_images",
-                "orders"
+                "orders",
+                "orders_tmp_ns"
             ]
         },
         {
@@ -183,6 +213,7 @@
                 "fulfillment_purchase_order_package_items",
                 "fulfillment_purchase_orders",
                 "fulfillment_supply_order",
+                "fulfillment_supply_order_tmp_ns",
                 "fulfillment_supply_order_items_old",
                 "fulfillment_supply_order_old_user_logs",
                 "fulfillment_supply_order_user_logs",
@@ -200,12 +231,18 @@
                 "soauto_session",
                 "soauto_upload",
                 "supply_order_item_details",
+                "supply_order_item_details_tmp_ns",
                 "supply_order_item_details_old",
+                "supply_order_item_details_old_tmp_ns",
                 "supply_order_items",
+                "supply_order_items_tmp_ns",
                 "supply_order_items_old",
+                "supply_order_items_old_tmp_ns",
                 "supply_order_remarks",
                 "supply_orders",
+                "supply_orders_tmp_ns",
                 "supply_orders_old",
+                "supply_orders_old_tmp_ns",
                 "supply_orders_old_track_scanning"
             ]
         },

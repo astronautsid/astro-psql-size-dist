@@ -2,7 +2,7 @@ package config
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"io"
 	"os"
 
 	"gopkg.in/yaml.v3"
@@ -39,7 +39,7 @@ func ReadRule(ruleFile string) (Rule, error) {
 	defer file.Close()
 
 	if file != nil {
-		byteValue, err := ioutil.ReadAll(file)
+		byteValue, err := io.ReadAll(file)
 		if err != nil {
 			return rule, err
 		}
