@@ -7,8 +7,8 @@ import (
 	"os"
 
 	_ "github.com/lib/pq"
-	"github.com/mrexmelle/go-psql-size/config"
-	"github.com/mrexmelle/go-psql-size/info"
+	"github.com/mrexmelle/go-psql-size-dist/config"
+	"github.com/mrexmelle/go-psql-size-dist/info"
 )
 
 func main() {

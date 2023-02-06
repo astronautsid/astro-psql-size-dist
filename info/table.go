@@ -3,7 +3,7 @@ package info
 import (
 	"errors"
 
-	"github.com/mrexmelle/go-psql-size/config"
+	"github.com/mrexmelle/go-psql-size-dist/config"
 )
 
 func (info *Table) FindLabelNameInRule(rule config.Rule) (string, error) {
