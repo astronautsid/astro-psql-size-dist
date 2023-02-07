@@ -1,5 +1,5 @@
 # go-psql-size
-A program to get the size of tables in PostgreSQL tables' based on configured label
+A program to get the size of tables in PostgreSQL based on configured label
 
 # Setup
 ## Install dependencies
